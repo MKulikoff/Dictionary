@@ -1,0 +1,25 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="mainPageStyle.css")
+        title Поиск
+    body
+        #container.searchContainer
+            h2 Перед поиском определитесь кто вы есть
+            #container.firstStep
+                #container.steps_container 
+                    #container(class="circle active") 1
+                    #container.progress
+                    #container.circle 2
+            #container.level
+                #container(class="ranks noob") Школьник
+                #container(class="ranks middle") Студент
+                #container(class="ranks master") Профессор
+            h2 Поиск
+            #container.secondStep 
+                input(type="text" class="searchField" name="word" placeholder="Введите слово")
+                button(class="searchBtn" type="submit") Найти
+script(src="/search.js") 
